@@ -1,36 +1,52 @@
-body {
-    font-family: Arial, sans-serif;
+body, html {
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+.background {
+    background-color: #e0f7fa;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100%;
 }
 
 header {
     width: 100%;
     background-color: #0077b6;
     color: white;
+    padding: 10px 0;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    padding: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: relative;
+    border-bottom: 3px solid white;
 }
 
 .profile {
     display: flex;
     align-items: center;
+    padding-left: 10px;
 }
 
 .profile img {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
+    width: 70px;
+    height: 70px;
     margin-right: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    position: absolute;
+    bottom: 10px;
+    left: 20%;
 }
 
 nav a {
     color: white;
-    margin: 0 15px;
     text-decoration: none;
 }
 
@@ -63,6 +79,11 @@ main {
 .project-detail {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    border: 2px solid #0077b6;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .nav-arrow {
@@ -76,6 +97,7 @@ main {
 .project-info {
     flex-grow: 1;
     text-align: center;
+    cursor: pointer;
 }
 
 .contact-menu {
