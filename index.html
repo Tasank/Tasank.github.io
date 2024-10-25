@@ -3,49 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мой Личный Сайт</title>
+    <title>Портфолио</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Добро пожаловать на мой сайт!</h1>
+        <div class="profile">
+            <img src="profile.jpg" alt="Фото профиля">
+            <h1>Максим Алинасович</h1>
+        </div>
         <nav>
-            <ul>
-                <li><a href="#about">Обо мне</a></li>
-                <li><a href="#resume">Резюме</a></li>
-                <li><a href="#contacts">Контакты</a></li>
-            </ul>
+            <a href="#" class="active">Проекты</a>
+            <a href="#">Обо мне</a>
+            <a href="#" id="contacts">Контакты</a>
         </nav>
     </header>
 
-    <section id="about">
-        <h2>Обо мне</h2>
-        <p>Здесь вы можете добавить информацию о себе, своих увлечениях и целях.</p>
-    </section>
-
-    <section id="resume">
-        <h2>Резюме</h2>
-        <p>Список ваших проектов и достижений.</p>
+    <aside class="projects-list">
         <ul>
-            <li>Проект 1: Краткое описание</li>
-            <li>Проект 2: Краткое описание</li>
-            <!-- Добавьте больше проектов по мере необходимости -->
+            <li><a href="project1.html">Новостной портал</a></li>
+            <li><a href="project2.html">Доска объявлений</a></li>
+            <li><a href="project3.html">REST API для мобильного приложения</a></li>
+            <li><a href="project4.html">Телеграмм бот</a></li>
+            <li><a href="project5.html">Задачи Бэна Стивенсона</a></li>
+            <li><a href="project5.html">Учебные проекты</a></li>
         </ul>
-    </section>
+    </aside>
 
-    <section id="contacts">
-        <h2>Контакты</h2>
-        <p>Здесь вы можете указать, как с вами связаться.</p>
+    <main>
+        <div class="project-detail">
+            <button class="nav-arrow left">&lt;</button>
+            <div class="project-info">
+                <img src="project-image.jpg" alt="Изображение проекта">
+                <h2>Название Проекта</h2>
+                <p>Описание проекта</p>
+            </div>
+            <button class="nav-arrow right">&gt;</button>
+        </div>
+    </main>
+
+    <div class="contact-menu">
         <ul>
-            <li>Email: ваш.email@example.com</li>
-            <li>LinkedIn: <a href="ваш-профиль">Ваш профиль</a></li>
-            <li>GitHub: <a href="https://github.com/ваш-логин">Ваш GitHub</a></li>
-            <!-- Добавьте другие контакты по мере необходимости -->
+            <li>Почта: example@mail.com</li>
+            <li>Телеграм: @username</li>
+            <li>Телефон: +123456789</li>
         </ul>
-    </section>
+    </div>
 
-    <footer>
-        <p>&copy; 2024 Ваше Имя</p>
-    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
