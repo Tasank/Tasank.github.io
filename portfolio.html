@@ -1,26 +1,24 @@
 <!DOCTYPE html>
-{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Портфолио</title>
-    <link rel="stylesheet" href="{% static 'styles.css' %}">
-    <script src="{% static 'portfolio.js' %}" defer></script>
+    <link rel="stylesheet" href="static/styles.css">
+    <script src="static/portfolio.js" defer></script>
 </head>
 <body>
 <header>
     <nav>
         <div class="logo">ЛевеТайн</div>
         <ul class="nav-links">
-            <li><a href="{% url 'index' %}">Главная</a></li>
-            <li><a href="{% url 'about' %}">Обо мне</a></li>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="about.html">Обо мне</a></li>
             <li><a href="#">Портфолио</a></li>
             <li><a href="#">Контакты</a></li>
         </ul>
     </nav>
 </header>
-
 <section class="portfolio">
     <div class="project-list">
         <h3>Мои проекты</h3>
@@ -42,24 +40,21 @@
         <div class="arrow right-arrow" onclick="changeProject(1)">&gt;</div>
     </div>
 </section>
-
 <div class="contact-icons">
     <a href="https://t.me/avenyr" target="_blank">
-        <img src="{% static 'img/icon-tg.png' %}" alt="Telegram">
+        <img src="static/img/icon-tg.png" alt="Telegram">
     </a>
     <a href="mailto:apanasovich04@mail.ru">
-        <img src="{% static 'img/icon-mail.png' %}" alt="Email">
+        <img src="static/img/icon-mail.png" alt="Email">
     </a>
     <a href="https://github.com/Tasank">
-        <img src="{% static 'img/icon-git.png' %}" alt="GitHub">
+        <img src="static/img/icon-git.png" alt="GitHub">
     </a>
 </div>
-
 <div class="projects" style="display: none;">
-    <div class="project" data-title="Проект 1: интернет-ресурс 'Новостной портал'" data-description="Сайт для публикации новостей" data-image="{% static 'projects/project1.png' %}" data-url="project1.html"></div>
-    <div class="project" data-title="Проект 2: онлайн-магазин" data-description="Магазин с возможностью онлайн-оплаты" data-image="{% static 'projects/project2.png' %}" data-url="project2.html"></div>
-    <div class="project" data-title="Проект 3: блог о технологиях" data-description="Платформа для публикации статей и отзывов" data-image="{% static 'projects/project3.png' %}" data-url="project3.html"></div>
+    <div class="project" data-title="Проект 1: интернет-ресурс 'Новостной портал'" data-description="Сайт для публикации новостей" data-image="static/projects/project1.png" data-url="project1.html"></div>
+    <div class="project" data-title="Проект 2: онлайн-магазин" data-description="Магазин с возможностью онлайн-оплаты" data-image="static/projects/project2.png" data-url="project2.html"></div>
+    <div class="project" data-title="Проект 3: блог о технологиях" data-description="Платформа для публикации статей и отзывов" data-image="static/projects/project3.png" data-url="project3.html"></div>
 </div>
-
 </body>
 </html>

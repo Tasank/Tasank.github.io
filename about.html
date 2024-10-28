@@ -1,34 +1,32 @@
 <!DOCTYPE html>
-{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href=" {% static 'styles.css' %}">
+    <link rel="stylesheet" href="static/styles.css">
 </head>
 <body>
 <header>
     <nav>
         <div class="logo">ЛевеТайн</div>
         <ul class="nav-links">
-            <li><a href="{% url 'index' %}">Главная</a></li>
-            <li><a href="{% url 'about' %}">Обо мне</a></li>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="about.html">Обо мне</a></li>
             <li><a href="#">Портфолио</a></li>
             <li><a href="#">Контакты</a></li>
         </ul>
     </nav>
 </header>
-
 <div class="contact-icons">
     <a href="https://t.me/avenyr" target="_blank">
-        <img src="{% static 'img/icon-tg.png' %}" alt="Telegram">
+        <img src="static/img/icon-tg.png" alt="Telegram">
     </a>
     <a href="mailto:apanasovich04@mail.ru">
-        <img src="{% static 'img/icon-mail.png' %}" alt="Email">
+        <img src="static/img/icon-mail.png" alt="Email">
     </a>
     <a href="https://github.com/Tasank">
-        <img src="{% static 'img/icon-git.png' %}" alt="GitHub">
+        <img src="static/img/icon-git.png" alt="GitHub">
     </a>
 </div>
 </body>
