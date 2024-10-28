@@ -1,0 +1,269 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1d1d1d;
+    color: #ffffff;
+}
+header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    font-size: 30px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-left: auto;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: #ccc;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #1d1d1d;
+}
+
+.hero-content {
+    max-width: 50%;
+    margin-left: 20%;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero-content .highlight {
+    color: #ffc107;
+}
+
+.hero-content p {
+    margin: 20px 0;
+    line-height: 1.5;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffc107;
+    color: #1d1d1d;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.hero-image img {
+    width: 400px;
+    height: auto;
+    margin-left: -90%;
+
+}
+
+.contact-icons {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.contact-icons a img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+}
+
+.contact-icons a:nth-child(2) img {
+    width: 64px; /* Увеличиваем ширину второй иконки */
+    height: auto; /* Сохраняем пропорции */
+}
+
+.contact-icons a:nth-child(3) img {
+    width: 40px; /* Увеличиваем ширину второй иконки */
+    height: auto; /* Сохраняем пропорции */
+}
+.contact-icons a img:hover {
+    transform: scale(1.1);
+}
+/* Портфолио */
+.portfolio {
+    display: flex;
+    padding: 50px;
+    height: 90vh;
+    background-color: #1d1d1d;
+}
+
+.project-list {
+    width: 15%;
+
+    border: 2px solid yellow;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+}
+
+.project-list h3 {
+    margin: 0 0 10px 0;
+}
+
+.project-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.project-list li {
+    margin: 5px 0;
+}
+
+.project-display {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    position: relative;
+    overflow: hidden; /* Скрываем переполнение */
+}
+
+.project-info {
+    flex: 1;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.project-content {
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.project-info img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.project-info:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.slide-in-left {
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slide-in-left 0.3s forwards;
+}
+
+.slide-in-right {
+    opacity: 0;
+    transform: translateX(100%);
+    animation: slide-in-right 0.3s forwards;
+}
+
+@keyframes slide-in-left {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-in-right {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.arrow {
+    cursor: pointer;
+    color: gray;
+    font-size: 2em;
+    padding: 0 20px;
+    transition: color 0.3s;
+}
+
+.arrow:hover {
+    color: #ffc107;
+}
+
+.project-info {
+    flex: 1;
+    height: 100%;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-info:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+
+/* Мобильная версия */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content, .hero-image {
+        max-width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 2em;
+    }
+
+    .hero-image img {
+        width: 200px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .contact-icons {
+        position: static;
+        justify-content: center;
+        padding: 20px 0;
+    }
+}

@@ -14,23 +14,12 @@
         <ul class="nav-links">
             <li><a href="{% url 'index' %}">Главная</a></li>
             <li><a href="{% url 'about' %}">Обо мне</a></li>
-            <li><a href="{% url 'portfolio' %}">Портфолио</a></li>
+            <li><a href="#">Портфолио</a></li>
             <li><a href="#">Контакты</a></li>
         </ul>
     </nav>
 </header>
-<section class="hero">
-    <div class="hero-content">
-        <h2>Привет,</h2>
-        <h1>Я <span class="highlight">Максим Апанасович</span></h1>
-        <p>Python разработчик</p>
-        <a href="#" class="btn">Download CV</a>
-    </div>
-    <div class="hero-image">
 
-        <img src="{% static 'img/profile.png' %}" alt="profile">
-    </div>
-</section>
 <div class="contact-icons">
     <a href="https://t.me/avenyr" target="_blank">
         <img src="{% static 'img/icon-tg.png' %}" alt="Telegram">
