@@ -446,12 +446,27 @@ nav {
         order: -1; /* Перемещаем блок перед project-display */
     }
 
+    .portfolio {
+        display: flex;
+        flex-direction: column;
+        padding: 0 15px; /* Добавляем отступы */
+    }
+
+    .project-list {
+        order: -1;
+        width: 100%; /* Делаем блок во всю ширину */
+        margin-bottom: 20px;
+    }
+
     .project-display {
         order: 0;
+        width: 100%; /* Делаем блок во всю ширину */
+        overflow-x: auto; /* Добавляем горизонтальную прокрутку */
     }
 
     .project-info {
-        width: 100%;
+        display: block; /* Убедитесь, что содержимое отображается блоком */
+        width: auto; /* Удаляем ограничения по ширине */
     }
 
     .project-content {
