@@ -237,6 +237,10 @@ nav {
     padding: 50px;
     height: 90vh;
 }
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .project-list {
     width: 15%;
