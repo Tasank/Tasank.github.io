@@ -364,12 +364,19 @@ nav {
 /* Мобильная версия */
 @media (max-width: 768px) {
     .hero {
-        flex-direction: column;
+        flex-direction: column-reverse; /* порядок отображения */
         text-align: center;
     }
 
     .hero-content, .hero-image {
         max-width: 100%;
+        margin: 0 auto; /* Центрируем блоки */
+    }
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Центрирование контента по центру */
     }
 
     .hero-content h1 {
@@ -390,9 +397,11 @@ nav {
         justify-content: center;
         padding: 20px 0;
     }
+
     .contact-info ul {
         padding: 10px;
     }
+
     .contact-info ul li {
         margin-bottom: 10px;
     }
@@ -400,22 +409,28 @@ nav {
     .about-section {
         padding: 10px;
     }
+
     .about-header h2 {
         font-size: 18px;
     }
+
     .about-content p {
         font-size: 14px;
     }
+
     .about-skills ul li {
         font-size: 14px;
     }
+
     .about-resume img {
         width: 100%;
         height: auto;
     }
+
     .certificate-row {
         flex-direction: column;
     }
+
     .certificate-row img {
         width: 100%;
         height: auto;
@@ -425,28 +440,36 @@ nav {
     .project-list {
         position: relative;
         z-index: 1;
+        order: -1; /* Перемещаем блок перед project-display */
         margin-bottom: 0;
     }
+
     .project-display {
         position: relative;
         z-index: 0;
         margin-top: 0;
     }
+
     .project-info {
         width: 100%;
     }
+
     .project-content {
         padding: 20px;
     }
+
     .arrow {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
     }
+
     .left-arrow {
         left: 0;
     }
+
     .right-arrow {
         right: 0;
     }
+
 }
