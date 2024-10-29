@@ -47,11 +47,12 @@ function changeProject(direction) {
     updateProject(direction);
 }
 
-document.querySelectorAll('.project').forEach(project => {
+document.querySelectorAll('.project-list li').forEach(project => {
   project.addEventListener('click', () => {
-    const url = project.getAttribute('data-url');
-    window.open(url, '_blank');
+    const url = project.textContent;
+    // Здесь вы можете получить URL из текста элемента
+    // и открыть его в новой вкладке
+    window.open(`https://github.com/Tasank/${url}`, '_blank');
   });
 });
-
 window.onload = () => updateProject(0);
