@@ -384,6 +384,7 @@ nav {
         flex-direction: column;
         gap: 10px;
     }
+
     .contact-icons {
         position: static;
         justify-content: center;
@@ -395,6 +396,7 @@ nav {
     .contact-info ul li {
         margin-bottom: 10px;
     }
+
     .about-section {
         padding: 10px;
     }
@@ -420,4 +422,24 @@ nav {
         margin-bottom: 10px;
     }
 
+    .project-list {
+        position: relative;
+        z-index: 1;
+        margin-bottom: 20px;
+    }
+    .project-display {
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        z-index: 0;
+    }
+    .project-info {
+        max-width: 100%;
+    }
+    .project-content {
+        padding: 20px;
+    }
+    .arrow {
+        margin: 10px 0;
+    }
 }
