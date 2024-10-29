@@ -454,7 +454,7 @@ nav {
 
     .project-list {
         order: -1;
-        width: 100%; /* Делаем блок во всю ширину */
+        width: 100%;
         margin-bottom: 20px;
     }
 
@@ -465,7 +465,7 @@ nav {
     }
 
     .project-info {
-        display: block; /* Убедитесь, что содержимое отображается блоком */
+        display: block;
         width: auto; /* Удаляем ограничения по ширине */
     }
 
