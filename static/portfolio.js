@@ -47,4 +47,11 @@ function changeProject(direction) {
     updateProject(direction);
 }
 
+document.querySelectorAll('.project').forEach(project => {
+  project.addEventListener('click', () => {
+    const url = project.getAttribute('data-url');
+    window.open(url, '_blank');
+  });
+});
+
 window.onload = () => updateProject(0);
