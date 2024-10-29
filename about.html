@@ -1,26 +1,127 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
     <link rel="stylesheet" href="static/styles.css">
 </head>
 <body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 <header>
     <nav>
         <div class="logo">ЛевеТайн</div>
         <ul class="nav-links">
             <li><a href="index.html">Главная</a></li>
             <li><a href="about.html">Обо мне</a></li>
-            <li><a href="#">Портфолио</a></li>
-            <li><a href="#">Контакты</a></li>
+            <li><a href="portfolio.html">Портфолио</a></li>
+            <li><a href="contact.html">Контакты</a></li>
         </ul>
     </nav>
 </header>
+
+<div class="about-section">
+    <div class="about-header">
+        <h2>Обо мне</h2>
+    </div>
+    <div class="about-content">
+        <p>Я Максим Апанасович, разработчик на Python. Я работал с Django, Flask, PostgreSQL, REST, SQLite, HTML, CSS,
+            Docker, Redis, Celery, Pycharm, Git. Я также имею опыт работы с
+            базовыми серверами и базами данных. Я сдержан, спокоен, стрессоустойчив и обучаем, могу адаптироваться к
+            разным ситуациям, больше обо мне скажет моя служебная характеристика.</p>
+    </div>
+    <div class="about-study">
+        <h3>Образование</h3>
+        Профессия "Python-разработчик" Skillfactory 2023-2024
+        <br>
+    </div>
+    <div class="about-skills">
+        <h3>Мои навыки</h3>
+        <ul>
+            <li>
+                <span>Django</span>
+                <img src="https://img.shields.io/badge/Django-green?style=flat&logo=django&logoColor=white"
+                     alt="Django">
+            </li>
+            <li>
+                <span>Python</span>
+                <img src="https://img.shields.io/badge/Python-3.8--3.11-blue?style=flat&logo=python&logoColor=white"
+                     alt="Python">
+            </li>
+            <li>
+                <span>Flask</span>
+                <img src="https://img.shields.io/badge/Flask-yellow?style=flat&logo=flask&logoColor=white" alt="Flask">
+            </li>
+            <li>
+                <span>PostgreSQL</span>
+                <img src="https://img.shields.io/badge/PostgreSQL-blue?style=flat&logo=postgresql&logoColor=white"
+                     alt="PostgreSQL">
+            </li>
+            <li>
+                <span>REST</span>
+                <img src="https://img.shields.io/badge/REST-API-orange?style=flat&logo=rest&logoColor=white" alt="REST">
+            </li>
+            <li>
+                <span>SQLite</span>
+                <img src="https://img.shields.io/badge/SQLite-green?style=flat&logo=sqlite&logoColor=white"
+                     alt="SQLite">
+            </li>
+            <li>
+                <span>HTML</span>
+                <img src="https://img.shields.io/badge/HTML-red?style=flat&logo=html5&logoColor=white" alt="HTML">
+            </li>
+            <li>
+                <span>CSS</span>
+                <img src="https://img.shields.io/badge/CSS-blue?style=flat&logo=css3&logoColor=white" alt="CSS">
+            </li>
+            <li>
+                <span>Docker</span>
+                <img src="https://img.shields.io/badge/Docker-blue?style=flat&logo=docker&logoColor=white" alt="Docker">
+            </li>
+            <li>
+                <span>Redis</span>
+                <img src="https://img.shields.io/badge/Redis-red?style=flat&logo=redis&logoColor=white" alt="Redis">
+            </li>
+            <li>
+                <span>Celery</span>
+                <img src="https://img.shields.io/badge/Celery-green?style=flat&logo=celery&logoColor=white"
+                     alt="Celery">
+            </li>
+            <li>
+                <span>Pycharm</span>
+                <img src="https://img.shields.io/badge/Pycharm-2024-purple?style=flat&logo=pycharm&logoColor=white"
+                     alt="Pycharm">
+            </li>
+            <li>
+                <span>Git</span>
+                <img src="https://img.shields.io/badge/Git-orange?style=flat&logo=git&logoColor=white" alt="Git">
+            </li>
+        </ul>
+    </div>
+    <div class="about-resume">
+        <h3>Служебная характеристика: </h3>
+        <a href="static/img/MyResume.jpg" data-lightbox="resume">
+            <img src="static/img/MyResume.jpg" alt="My Resume">
+        </a>
+    </div>
+    <div class="about-certificates">
+    <h3>Сертификаты:</h3>
+    <div class="certificate-row">
+        <a href="static/img/Certificate1.jpg" data-lightbox="certificates">
+            <img src="static/img/Certificate1.jpg" alt="Certificate 1">
+        </a>
+        <a href="static/img/Certificate2.jpg" data-lightbox="certificates">
+            <img src="static/img/Certificate2.jpg" alt="Certificate 2">
+        </a>
+    </div>
+</div>
+</div>
+
 <div class="contact-icons">
     <a href="https://t.me/avenyr" target="_blank">
-        <img src="static/img/icon-tg.png" alt="Telegram">
+        <img src="static/img/Icon-tg.jpg" alt="Telegram">
     </a>
     <a href="mailto:apanasovich04@mail.ru">
         <img src="static/img/icon-mail.png" alt="Email">

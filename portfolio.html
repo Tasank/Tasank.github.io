@@ -14,18 +14,22 @@
         <ul class="nav-links">
             <li><a href="index.html">Главная</a></li>
             <li><a href="about.html">Обо мне</a></li>
-            <li><a href="#">Портфолио</a></li>
-            <li><a href="#">Контакты</a></li>
+            <li><a href="portfolio.html">Портфолио</a></li>
+            <li><a href="contact.html">Контакты</a></li>
         </ul>
     </nav>
 </header>
+
 <section class="portfolio">
     <div class="project-list">
         <h3>Мои проекты</h3>
         <ul>
-            <li>Новостной Портал</li>
-            <li>Проект 2</li>
-            <li>Проект 3</li>
+            <li>1: Новостной Портал</li>
+            <li>2: Доска объявлений для MMORPG</li>
+            <li>3: REST API для мобильного приложения</li>
+            <li>4: Рабочая тетрадь по книге</li>
+            <li>5: Телеграм бот</li>
+            <li>6: Учебные проекты</li>
         </ul>
     </div>
     <div class="project-display">
@@ -40,9 +44,10 @@
         <div class="arrow right-arrow" onclick="changeProject(1)">&gt;</div>
     </div>
 </section>
+
 <div class="contact-icons">
     <a href="https://t.me/avenyr" target="_blank">
-        <img src="static/img/icon-tg.png" alt="Telegram">
+        <img src="static/img/Icon-tg.jpg" alt="Telegram">
     </a>
     <a href="mailto:apanasovich04@mail.ru">
         <img src="static/img/icon-mail.png" alt="Email">
@@ -51,10 +56,15 @@
         <img src="static/img/icon-git.png" alt="GitHub">
     </a>
 </div>
+
 <div class="projects" style="display: none;">
-    <div class="project" data-title="Проект 1: интернет-ресурс 'Новостной портал'" data-description="Сайт для публикации новостей" data-image="static/projects/project1.png" data-url="project1.html"></div>
-    <div class="project" data-title="Проект 2: онлайн-магазин" data-description="Магазин с возможностью онлайн-оплаты" data-image="static/projects/project2.png" data-url="project2.html"></div>
-    <div class="project" data-title="Проект 3: блог о технологиях" data-description="Платформа для публикации статей и отзывов" data-image="static/projects/project3.png" data-url="project3.html"></div>
+    <div class="project" data-title="Портал Новостей (Python, Django, SQL)" data-description="Проект новостного портала, который позволяет публиковать новости и статьи, комментировать их и оценивать." data-image="static/img/PortalPreview.png" data-url="project1.html"></div>
+    <div class="project" data-title="Доска объявлений для MMORPG (Python, Django, SQL)" data-description="BulletinBoard - это интернет-ресурс для фанатского сервера MMORPG, который позволяет пользователям создавать и редактировать объявления, оставлять отклики на них..." data-image="static/img/BulletinBoardPreview.png" data-url="project2.html"></div>
+    <div class="project" data-title="REST API для отправки данных о перевалах (Python, Django-REST, Flask)" data-description="Этот REST API позволяет отправлять данные о перевалах на сервер. API принимает JSON-данные о перевале и возвращает результат операции в виде JSON-объекта." data-image="static/img/RestApiPreview.png'" data-url="project3.html"></div>
+    <div class="project" data-title="Рабочая тетрадь по книги Бена Стивенсона (Python)" data-description="Решения 186 задач из книги Бена Стивенсона на русском, с дополнительными материалами" data-image="static/img/BookPreview.jpg'" data-url="project4.html"></div>
+    <div class="project" data-title="Телеграм бот (Python)" data-description="Свойство бота: может конвертировать обменные курсы валют. Его можно изменить на курс криптовалюты." data-image="static/img//TelegramBotPreview.png" data-url="project5.html"></div>
+    <div class="project" data-title="Учебные проекты (Python)" data-description="Консольные Игры: Крестики-нолики, Морской бой, Fizz-Buzz_Game. Симуляции: Простое производство, Зонд-Фон-Неймана..." data-image="static/img/ProjectsPreview.png" data-url="project6.html"></div>
 </div>
+
 </body>
 </html>
