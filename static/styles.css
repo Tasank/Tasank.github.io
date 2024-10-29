@@ -238,7 +238,7 @@ nav {
     height: 90vh;
 }
 .projects {
-  display: flex;
+  display: block;
   flex-wrap: wrap;
 }
 
