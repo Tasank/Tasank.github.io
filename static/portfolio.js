@@ -47,10 +47,13 @@ function changeProject(direction) {
     updateProject(direction);
 }
 
-document.querySelectorAll('.project').forEach(project => {
-  project.addEventListener('click', () => {
-    const url = project.getAttribute('data-url');
-    window.open(url, '_blank');
-  });
+document.querySelectorAll('.project-info').forEach(info => {
+    info.addEventListener('click', () => {
+        const projectContent = document.getElementById('project-content');
+        const project = projects[currentProjectIndex];
+        const url = project.getAttribute('data-url');
+        window.open(url, '_blank');
+    });
 });
+
 window.onload = () => updateProject(0);
